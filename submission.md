@@ -103,10 +103,7 @@ I asked AI to summarize each service file and trace the flow of one endpoint.
 ---
 
 ## Commit Log
-
-> Paste (or reference) your `git log --oneline` screenshot here, showing one
-> `fix:` commit per bug on the `bugfix/mixtape` branch.
-
+![Git commits](git_log.png)
 ```
 [screenshot or pasted output of: git log --oneline]
 ```
