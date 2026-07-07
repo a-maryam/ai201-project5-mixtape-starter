@@ -75,13 +75,13 @@ I asked AI to summarize each service file and trace the flow of one endpoint.
 - I set the user last listened at to Saturday, and then I called update_listening_streak for the next day (Sunday). The streak did not update to 2 as it should have.
 
 **How you found the root cause**
--
+- I started off in streak_service.py. I looked at update_listening_streak method because it seems likely to be the issue. get_streak is really thin and doesn't seem likely. The weird condition ended up being today.weekday()!=6. 
 
 **The root cause**
--
+- The root cause was today.weekday()!=6 condition which caused the streak to reset on Saturday. 
 
 **Your fix and side-effect check**
--
+- I removed the weekday!=6 condition so the streak would not reset. I ran the streak test suite and everything was fine. 
 
 ---
 
