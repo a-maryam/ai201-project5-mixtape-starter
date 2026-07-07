@@ -103,7 +103,6 @@ I asked AI to summarize each service file and trace the flow of one endpoint.
 ---
 
 ## Commit Log
-![Git commits](git_log.png)
 ```
-[screenshot or pasted output of: git log --oneline]
+![Git commits](git_log.png)
 ```
